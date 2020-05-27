@@ -1,0 +1,45 @@
+\begin{titlepage}
+    % --------------------------------------------------------------------
+    % Formatting title layout
+    % --------------------------------------------------------------------
+    \newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+    \makeatletter							% Title
+    \def\printtitle{%						
+        {\centering \@title\par}}
+    \makeatother									
+    
+    \makeatletter							% Author
+    \def\printauthor{%					
+        {\centering \large \@author}}				
+    \makeatother							
+
+    % --------------------------------------------------------------------
+    % Title text
+    % --------------------------------------------------------------------
+    \title{	\normalsize \textsc{} 	% Subtitle
+    		 	\\[2.0cm]								% 2cm spacing
+    			\HRule{0.5pt} \\						% Upper rule
+    			\LARGE \textbf{\uppercase{ECE 161B: Lab 0\\ Discrete-Time Domain Signal in MATLAB}}	% Title
+    			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+    			\normalsize ECE 161B | WINTER 2020\\
+    			\today			% Todays date
+    		}
+    
+    \author{
+    		Roy Kim\\	
+    		A13804992\\
+    		Electrical and Computer Engineering\\	
+    		UC San Diego\\
+    }
+    
+    % ------------------------------------------------------------------------------
+    % Title display (Maketitle)
+    % ------------------------------------------------------------------------------
+    \thispagestyle{empty}		% Remove page numbering on this page
+    
+    \printtitle					% Print the title data as defined above
+      	\vfill
+    \printauthor				% Print the author data as defined above
+    \newpage
+
+\end{titlepage}
